@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário</title>
+
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Varela+Round" rel="stylesheet">
+			<link rel="stylesheet" type="text/css" href="formstyle.css">
+</head>
+<body>
+
+	<div id="div_popfundo"></div>
+		<div id="div_poplogin">
+			<form id="form-login" class="enviar-form">
+						<h3>Preencha os dados!</h3>
+					<input class="caixa-login" id="login-Nome" name="nome" type="text" placeholder="Digite o seu nome.">
+				<input class="caixa-login" id="login-Email" name="email" type="email" placeholder="Digite o seu e-mail.">
+			<button id="btn-login" class="btn">Enviar</button>
+		</form>
+	</div>
+
+	<div id="div-titulo">
+		<h1 id="titulo">QUESTIONÁRIO</h1>
+	</div>
+
+	<div id="div-perg">
+
+		<form id="form-perg1">
+
+			<h2 class="form-perg">1 – Você tem facilidade de se relacionar com as pessoas?</h2>
+				<input type="radio" class="perg1" name="resp" value="a">
+					<label for="perg1">a) Sim.</label></br>
+						<input type="radio" class="perg1" name="resp" value="b">
+							<label for="perg1">b) Não.</label></br>
+								<input type="radio" class="perg1" name="resp" value="c">
+									<label for="perg1">c)Somente com pessoas muito próximas.</label></br>
+		</form>
+		<form id="perg2">
+									<h2 class="form-perg">2 – Você sabe exatamente quais são seus pontos fortes e fracos?</h2>
+								<input type="radio" class="perg2" name="resp" value="a">
+							<label for="perg2">a)Sim.</label></br>
+						<input type="radio" class="perg2" name="resp" value="b">
+					<label for="perg2">b)Não.</label></br>
+				<input type="radio" class="perg2" name="resp" value="c">
+			<label for="perg2">c)Nunca pensei sobre isso.<label></br>
+		</form>
+		<form id="perg3">
+			<h2 class="form-perg">3 - Você costuma preocupar-se com a imagem que você passa através das redes sociais?</h2>
+				<input type="radio" class="perg3" name="perg3" value="a">
+					<label for="perg3">a)Preocupo-me.</label></br>
+						<input type="radio" class="perg3" name="perg3" value="b">
+							<label for="perg3">b)Não me preocupo com isso.</label></br>
+								<input type="radio" class="perg3" name="perg3" value="c">
+									<label for="perg3">c)Desconheço as políticas de privacidade das redes.</label></br>
+		</form>
+		<form id="perg4">
+									<h2 class="form-perg">4 - Levando em consideração a vestimenta no trabalho formal, você tem alguma restrição sobre como se vestir?</h2>
+								<input type="radio" class="perg4" name="perg4" value="a">
+							<label for="perg4">a)Não vejo problema algum em utilizar a roupa de academia no trabalho.</label></br>
+						<input type="radio" class="perg4" name="perg4" value="b">
+					<label for="perg4">b)É importante estar na moda principalmente no ambiente de trabalho.</label></br>
+				<input type="radio" class="perg4" name="perg4" value="c">
+			<label for="perg4">c)O importante é utilizar uma roupa adequada que esteja limpa e bem passada.</label></br>
+		</form>
+		<form id="perg5">
+			<h2 class="form-perg">5 - De modo geral, no trabalho ou na escola, você faz mais do que é esperado de você?</h2>
+				<input type="radio" class="perg5" name="perg5" value="a">
+						<label for="perg5">a)Faço apenas minha obrigação.</label></br>
+							<input type="radio" class="perg5" name="perg5" value="b">
+								<label for="perg5">b)Habitualmente faço mais.</label></br>
+									<input type="radio" class="perg5" name="perg5" value="c">
+										<label for="perg5">c)Às vezes faço mais.</label></br>
+	 </form>
+   <form id="perg6">
+										<h2 class="form-perg">6 - Você costuma manter contatos em sua rede com ex-colegas de trabalho ou escola?</h2>
+									<input type="radio" class="perg6" name="perg6" value="a">
+								<label for="perg6">a)Sim.<label></br>
+							<input type="radio" class="perg6" name="perg6" value="b">
+						<label for="perg6">b)Não.</label></br>
+					<input type="radio" class="perg6" name="perg6" value="c">
+				<label for="perg6">c)Ocasionalmente.</label></br>
+	</form
+		</div>
+
+				<button id="enviar-form" class="btn">Enviar questionário</button>
+
+				<div id="myModal" class="modal">
+				  <div class="modal-content">
+				    <div class="modal-header">
+				      <span class="close">&times;</span>
+				      	<h2 id="titulo-modal">Seus dados foram gravados.</h2>
+				    			</div>
+										<h2 id="titulo-content">Resultado:</h2>
+					   					<div class="modal-body">
+						 						</div>
+													<button id="btn-modal" onclick="document.getElementById('id01').style.display='none'">Ok</button>
+														</div>
+															</div>
+</body>
+
+	<script src="form-javascript.js"></script>
+
+</html>
